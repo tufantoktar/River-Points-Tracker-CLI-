@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "river-points"
+version = "0.1.0"
+description = "CLI to estimate River points from stake and engagement"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "you", email = "you@example.com"}]
+dependencies = ["click>=8.1", "rich>=13.0"]
+
+[project.scripts]
+river-points = "river_points.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
